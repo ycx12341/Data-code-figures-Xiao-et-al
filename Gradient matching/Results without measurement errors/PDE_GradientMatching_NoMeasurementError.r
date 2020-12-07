@@ -3,6 +3,9 @@
 
 ### Single run on dataset with no measurement error ###
 
+#Environment settings
+library(readr)
+
 #Source companion functions
 source("PDE_GradientMatching_Functions.r")
 
@@ -65,16 +68,24 @@ ref.data.trun <- generate.reference.data(n.x11, max.x11, dt, max.t,
 dist <- "gamma"
 grads <- approximate.gradients(ref.data.trun, x11, max.t, distribution = dist)
 
+#write_rds(grads, "Reference gradients GAM.rds")
+grads <- read_rds("Reference gradients GAM.rds")
+
 #Write gradients predicted by GAM into a .txt file
-write.table(grads, "Reference gradients GAM.txt")
+#write.table(grads, "Reference gradients GAM.txt")
 
 #Estimate parameter values
 res <- optim(start.values, calculate.sse, grads = grads, fixed.par = fixed.par,
-             control = list(trace = 1, maxit = 2000))
+             control = list(trace = 1, maxit = 20000, reltol = 1e-10))
 par.ests <- res$par
 print(par.ests)
+
+# dn = 0.009957235  gamma = 0.045667239  rn = 4.595227960 
+# eta = 10.306459015  dm = 0.009527586  alpha = 0.099251049
 
 #Calculate percent error
 perc.err <- (par.ests - true.values) / true.values * 100
 print(perc.err)
 
+#        dn      gamma         rn        eta         dm      alpha 
+#-0.4276505 -8.6655220 -8.0954408  3.0645902 -4.7241351 -0.7489510 

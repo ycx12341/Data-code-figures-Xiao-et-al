@@ -262,4 +262,4 @@ for (i in 1:length(tc.den[, 1])) {
 # Write the true gradients into a .txt file
 ref.grads.fds <- cbind(dndt, d2ndx2, hap, logis, dfdt, mf, dmdt, d2mdx2, tc.den)
 
-write.table(ref.grads.fds, "True gradients foward difference scheme.txt")
+write.table(ref.grads.fds, "True gradients forward difference scheme.txt")
