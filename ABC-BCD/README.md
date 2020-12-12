@@ -9,7 +9,7 @@ Some key files in each folder (Except **Consistency analysis** and **Formatted c
 
 **Round 10 parameters 10000 all 3.txt**: Final parameters, the column means are taken as the final estimates of the parameters. (See **Results.R**)
 
-**How can the synthetic data be reproduced?**
+<u>**How can the synthetic data be reproduced?**</u>
 
 Initially, sample 10000 values for each parameter from its initial distribution in **Prior.R**, form them into a 10000x6 table so we have 10000 vectors of parameter values that can be substituted back to the PDE solver. This table is written in **Round 1 parameters 10000 ecm.txt**
 
