@@ -14,5 +14,5 @@ The .R file **Replaced TC and dm gradients.R** generates the parameter estimates
 
 The .R file **Replaced TC dm dmdt gradients.R** generates the parameter estimates obtained using the updated gradient matrices, where all the tumour cells related gradients, the temporal gradients of MDE and the second order spatial gradients related to parameter dm were replaced by the corresponding true gradients in **True gradients forward difference scheme.txt**. The updated gradient matrices are presented in folder **SimRes_replace_tc_and_dm_dmdt_ests_fds_grads**, the final parameter estimates are given in **Parameters means tc dm dmdt gradients replaced by FDS grads**.
 
-The folder **MATLAB plots** contains the plots of parameter estimates at different levels of measurement errors in different attempts mentioned above, based on the final results obtained in each solution. 
+The folder **MATLAB plots** contains the plots of parameter estimates of each attempt mentioned above at different levels of measurement errors.
 
