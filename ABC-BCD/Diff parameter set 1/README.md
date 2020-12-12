@@ -1,4 +1,6 @@
-## How can the synthetic data be reproduced? ##
+First attempt on a different reference data set
+
+**How can the synthetic data be reproduced?**
 
 Initially, sample 10000 values for each parameter from its initial distribution in **Prior.R**, form them into a 10000x6 table so we have 10000 vectors of parameter values that can be substituted back to the PDE solver. This table is written in **Round 1 parameters 10000 ecm.txt**
 
