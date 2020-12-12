@@ -34,7 +34,7 @@ A full round for the evaluation of ECM profile is complete. After 3 rounds are c
 
 After 5 rounds are carried out for the evaluation of MDE profile, we extract the samples of parameter eta, dm, alpha (4th, 5th, 6th column of **Round 6 parameters 10000 ecm_mde.txt**), set them to be the 4th, 5th, 6th column of **Round 1 parameters 10000 all 3.txt**, sample the other parameter values from their initial distribution. Function **bcd()** in **Automatic.R** needs to be reloaded again, with line 126 being changed to **for (j in 1:240) {**
 
-After 9 rounds are carried out for the evaluation of tumour cells profile. The avarage of each column in **Round 10 parameters 10000 all 3.txt** can be calculated and taken as the final estimations of the parameters.
+After 9 rounds are carried out for the evaluation of tumour cells profile. The avarage of each column in **Round 10 parameters 10000 all 3.txt** can be calculated and taken as the final estimates of the parameters.
 
 All simulation results were generated using R 4.0.2 “Taking off again”.
 
