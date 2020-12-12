@@ -24,7 +24,9 @@ The results of Bhattacharyya distance calculations are also written in the .txt 
 
 ## How can the synthetic data be reproduced? ##
 
-Initially, sample 10000 values for each parameter from its initial distribution in **Prior.R**, form them into a 10000x6 table so we have 10000 vectors of parameter values that can be substituted back to the PDE solver. This table is written in **Round 1 parameters 10000 ecm.txt**
+Run **mean_var_ref.m** with the corresponding parameter values to generate and record the reference summary statistics. 
+
+Sample 10000 values for each parameter from its initial distribution in **Prior.R**, form them into a 10000x6 table so we have 10000 vectors of parameter values that can be substituted back to the PDE solver. This table is written in **Round 1 parameters 10000 ecm.txt**
 
 Open the file **Automatic.R** in the folder to read in the functions, then open **Results.R** and use function **bcd()** to obtain the Bhattacharyya distance of each parameter vector in relation to the reference one, 10000 values are written in **B-C distance ecm r1.txt**. Note that line 126 of file **Automatic.R** needs to be **for (j in 81:160)**, since only the ECM time series are evaluated at this point. 
 
