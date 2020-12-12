@@ -8,6 +8,12 @@ Folders **Diff parameter set 1**, **Diff parameter set 2** contain the results o
 
 Some key files in each folder (Except **Consistency analysis** and **Formatted code**):
 
+**Prior.R**: Gnerates the initial parameters of each run.
+
+**Automatic.R**: Contains all the necessary functions for the ABC-BCD scheme. 
+
+**Results.R**: Generate and store the results at the end of each round. 
+
 **mean_var_obs.txt**: Means and variances of the 240 reference time series, generated using the MATLAB file **mean_var_ref.m**.
 
 **Round 1 parameters 10000 ecm.txt**: Initial parameters, all parameter values are sampled from corresponding initial distributions using "runif" command in R. (See **Prior.R**)
