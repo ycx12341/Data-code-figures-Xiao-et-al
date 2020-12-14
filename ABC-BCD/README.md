@@ -2,7 +2,7 @@
 
 **This folder contains all the synthetic data generated in the attempt of applying the ABC-BCD scheme described in Xiao et al.**
 
-Folders **Original attempt**, **Extra attempt 1**, **Extra attempt 2** contain the results of the first, second and third attempts of applying ABC-BCD scheme to the main reference data set, parameter estimates at the end of each round and the corresponding Bhattacharyya distance of each parameter adaption are presented in .txt files in each folder. 
+Folders **Original attempt**, **Extra attempt 1**, **Extra attempt 2** contain the results of the first, second and third attempts of applying ABC-BCD scheme to the main reference data set, detailed parameter estimates at the end of each round and the corresponding Bhattacharyya distance of each parameter adaption are presented in .txt files in each folder. 
 
 Folders **Diff parameter set 1**, **Diff parameter set 2** contain the results of applying ABC-BCD scheme to two other data sets generated using different but biologically reasonable parameters. 
 
