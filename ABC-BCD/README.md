@@ -41,4 +41,4 @@ After 9 rounds are carried out for the evaluation of tumour cells profile. The a
 All simulation results were generated using R 4.0.2 “Taking off again”.
 Folder **Consistency analysis** contains the results of Monte-Carlo errors. 
 
-Folder **Formatted code** contains a simpler version of the code which runs the procedures above in one go. 
+Bonus: folder **Formatted code** contains a simpler version of the code which runs the procedures above in one go. 
