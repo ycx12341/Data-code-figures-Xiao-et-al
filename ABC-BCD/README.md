@@ -4,7 +4,7 @@
 
 Folders **Original attempt**, **Extra attempt 1**, **Extra attempt 2** contain the results of the first, second and third attempts of applying ABC-BCD scheme to the main reference data set, detailed parameter estimates at the end of each round and the corresponding Bhattacharyya distance of each parameter adaption are presented in .txt files in each folder. 
 
-Folders **Diff parameter set 1**, **Diff parameter set 2** contain the results of applying ABC-BCD scheme to two other data sets generated using different but biologically reasonable parameters. 
+Folders **Diff parameter set 1**, **Diff parameter set 2** contain the detailed results of applying ABC-BCD scheme to two other data sets generated using different but biologically reasonable parameters. 
 
 Some key files in each folder (Except **Consistency analysis** and **Formatted code**):
 
