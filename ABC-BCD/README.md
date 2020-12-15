@@ -6,6 +6,10 @@ Folders **Original attempt**, **Extra attempt 1**, **Extra attempt 2** contain t
 
 Folders **Diff parameter set 1**, **Diff parameter set 2** contain the detailed results of applying ABC-BCD scheme to two other data sets generated using different but biologically reasonable parameters. 
 
+Folder **Consistency analysis** contains the results of Monte-Carlo errors. 
+
+Bonus: folder **Formatted code** contains a simpler version of the code which runs the procedures above in one go. 
+
 Some key files in each folder (Except **Consistency analysis** and **Formatted code**):
 
 **Prior.R**: Gnerates the initial parameters of each run.
@@ -39,6 +43,3 @@ After 5 rounds are carried out for the evaluation of MDE profile, we extract the
 After 9 rounds are carried out for the evaluation of tumour cells profile. The avarage of each column in **Round 10 parameters 10000 all 3.txt** can be calculated and taken as the final estimates of the parameters.
 
 All simulation results were generated using R 4.0.2 “Taking off again”.
-Folder **Consistency analysis** contains the results of Monte-Carlo errors. 
-
-Bonus: folder **Formatted code** contains a simpler version of the code which runs the procedures above in one go. 
