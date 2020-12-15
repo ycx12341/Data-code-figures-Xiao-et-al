@@ -3,8 +3,6 @@
 # This R file contains all the necessary functions used in the 
 # ABC-BCD scheme. 
 
-paras <- read.table("Round 1 parameters 10000 ecm.txt",sep="")
-
 bcd <- function(paras) {
   
   # Mean_var_obsed table
