@@ -3,8 +3,6 @@
 # This R file contains all the necessary functions used in the 
 # ABC-BCD scheme. 
 
-paras <- read.table("Round 1 parameters 10000 ecm.txt",sep="")
-
 # The function which calculates the Bhattacharyya distance.  
 bcd <- function(paras) {
   
